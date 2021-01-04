@@ -50,5 +50,8 @@ cnpm 安装： cnpm install -g vue-cli</code></pre>
 <pre><code>vue init webpack demo（项目名，小写）</code></pre>
 <p>Project name（项目名：默认“demo”）<br>Project description （项目介绍：默认 A Vue.js project）<br>Author （作者名）<br>Vue build （Use arrow keys）<br>Runtime + Compiler：recommended for most users（运行加编译）<br>Runtime—only：about 6KB lighter min+gzip，but templaters（or any Vue-spcific HTML）are ONLY allowed in .Vue files - render functions are required elsewhere（仅运行）<br>Install vue-router ? （Y/n）（安装Vue路由？）<br>Use ESLint to lint your code ? （Y/n）（使用ESlint对代码进行校验？）<br>Set up unit tests （Y/n）（使用单元测试？）<br>Setup e2e tests with Nightwatch？ （Y/n）（使用e2e测试？）<br>Should we run npm install fr you after the project has been created?（recommended）（Use arrow keys）<br>Yes，use Npm<br>Yes，use Yarn<br>No，I whill handle that myself<br>如果npm可以正常使用，选第一项<br>如果使用淘宝镜像选最后一个<br>根据提示<br>cd demo<br>cnpm install （or if using yarn ：yarn）<br>npm run dev</p>
 ]]></content>
+      <tags>
+        <tag>vue</tag>
+      </tags>
   </entry>
 </search>
