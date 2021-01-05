@@ -1,6 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>vue-cli脚手架的搭建及创建项目</title>
+    <url>/2021/01/04/vue-cli%E8%84%9A%E6%89%8B%E6%9E%B6%E7%9A%84%E6%90%AD%E5%BB%BA%E5%8F%8A%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE/</url>
+    <content><![CDATA[<h1 id="vue-cli脚手架的搭建及创建项目"><a href="#vue-cli脚手架的搭建及创建项目" class="headerlink" title="vue-cli脚手架的搭建及创建项目"></a>vue-cli脚手架的搭建及创建项目</h1><blockquote>
+<p>1.安装node.js环境</p>
+</blockquote>
+<p>官网下载：<a href="https://nodejs.org/en/download/">https://nodejs.org/en/download/</a><br>一直默认就行，安装完成后需在cmd中验证是否安装成功：</p>
+<pre><code>node -v
+npm -v</code></pre>
+<p>出现版本号则说明安装成功<br><strong>注意：</strong> node的版本尽量高一些，因为vue运行需要基于npm一定的版本（最好是3.x.x以上），版本低了有可能会出错，而npm是随node的安装自动安装的，直接安装最新的node，npm的版本号也会变高的，不用再做更多的操作</p>
+<blockquote>
+<p>2.使用npm或cnpm（淘宝镜像）全局安装 webpack</p>
+</blockquote>
+<p>使用命令工具输入：</p>
+<pre><code>npm 安装： npm install webpack webpack-cli -g
+cnpm 安装： npm install webpack webpack-cli -g</code></pre>
+<p>安装完成后，检验是否安装成功：</p>
+<pre><code>webpack -v</code></pre>
+<p>如出现版本号则说明安装成功</p>
+<p><strong>注意:</strong> 由于npm是国外的，可能因为网速的原因会安装失败，这是则可使用cnpm安装</p>
+<blockquote>
+<p>3.全局安装vue-cli</p>
+</blockquote>
+<p>在命令行输入：</p>
+<pre><code>npm 安装： npm install -g vue-cli
+cnpm 安装： cnpm install -g vue-cli</code></pre>
+<p>安装完成后验证：</p>
+<pre><code>vue -V</code></pre>
+<p>如果出现版本号则安装成功<br><strong>注意:</strong> 这里的”V”是大写</p>
+<p><strong>如上述操作都完成，就可进入下一步，创建项目</strong></p>
+<blockquote>
+<p>4.创建项目</p>
+</blockquote>
+<pre><code>vue init webpack demo（项目名，小写）</code></pre>
+<p>Project name（项目名：默认“demo”）<br>Project description （项目介绍：默认 A Vue.js project）<br>Author （作者名）<br>Vue build （Use arrow keys）<br>Runtime + Compiler：recommended for most users（运行加编译）<br>Runtime—only：about 6KB lighter min+gzip，but templaters（or any Vue-spcific HTML）are ONLY allowed in .Vue files - render functions are required elsewhere（仅运行）<br>Install vue-router ? （Y/n）（安装Vue路由？）<br>Use ESLint to lint your code ? （Y/n）（使用ESlint对代码进行校验？）<br>Set up unit tests （Y/n）（使用单元测试？）<br>Setup e2e tests with Nightwatch？ （Y/n）（使用e2e测试？）<br>Should we run npm install fr you after the project has been created?（recommended）（Use arrow keys）<br>Yes，use Npm<br>Yes，use Yarn<br>No，I whill handle that myself<br>如果npm可以正常使用，选第一项<br>如果使用淘宝镜像选最后一个<br>根据提示<br>cd demo<br>cnpm install （or if using yarn ：yarn）<br>npm run dev</p>
+]]></content>
+      <tags>
+        <tag>vue</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2021/01/04/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
