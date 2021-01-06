@@ -1,20 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>hexo+Ayer主题安装</title>
-    <url>/2021/01/06/hexo-Ayer%E4%B8%BB%E9%A2%98%E5%AE%89%E8%A3%85/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p> 在b站刷着视频看到了hexo搭建个人博客，想着本人已经大三了连一个个人的博客都没有所以也就用hexo搭建了一个个人博客。</p>
-]]></content>
-      <categories>
-        <category>hexo</category>
-        <category>博客</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>博客</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>vue-cli中使用Vuex</title>
     <url>/2021/01/05/vue-cli%E4%B8%AD%E4%BD%BF%E7%94%A8Vuex/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="vue-cli中使用Vuex"><a href="#vue-cli中使用Vuex" class="headerlink" title="vue-cli中使用Vuex"></a>vue-cli中使用Vuex</h2><blockquote>
@@ -98,6 +84,20 @@ cnpm 安装： cnpm install -g vue-cli</code></pre>
       </categories>
       <tags>
         <tag>vue</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo+Ayer主题安装</title>
+    <url>/2021/01/06/hexo-Ayer%E4%B8%BB%E9%A2%98%E5%AE%89%E8%A3%85/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p> 在b站刷着视频看到了hexo搭建个人博客，想着本人已经大三了连一个个人的博客都没有所以也就用hexo搭建了一个个人博客。</p>
+]]></content>
+      <categories>
+        <category>hexo</category>
+        <category>博客</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>博客</tag>
       </tags>
   </entry>
 </search>
