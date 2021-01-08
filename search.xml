@@ -48,49 +48,6 @@
       </tags>
   </entry>
   <entry>
-    <title>vue-cli脚手架的搭建及创建项目</title>
-    <url>/2021/01/04/vue-cli%E8%84%9A%E6%89%8B%E6%9E%B6%E7%9A%84%E6%90%AD%E5%BB%BA%E5%8F%8A%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="vue-cli脚手架的搭建及创建项目"><a href="#vue-cli脚手架的搭建及创建项目" class="headerlink" title="vue-cli脚手架的搭建及创建项目"></a>vue-cli脚手架的搭建及创建项目</h1><blockquote>
-<p>1.安装node.js环境</p>
-</blockquote>
-<p>官网下载：<a href="https://nodejs.org/en/download/">https://nodejs.org/en/download/</a><br>一直默认就行，安装完成后需在cmd中验证是否安装成功：</p>
-<pre><code>node -v
-npm -v</code></pre>
-<p>出现版本号则说明安装成功<br><strong>注意：</strong> node的版本尽量高一些，因为vue运行需要基于npm一定的版本（最好是3.x.x以上），版本低了有可能会出错，而npm是随node的安装自动安装的，直接安装最新的node，npm的版本号也会变高的，不用再做更多的操作</p>
-<blockquote>
-<p>2.使用npm或cnpm（淘宝镜像）全局安装 webpack</p>
-</blockquote>
-<p>使用命令工具输入：</p>
-<pre><code>npm 安装： npm install webpack webpack-cli -g
-cnpm 安装： npm install webpack webpack-cli -g</code></pre>
-<p>安装完成后，检验是否安装成功：</p>
-<pre><code>webpack -v</code></pre>
-<p>如出现版本号则说明安装成功</p>
-<p><strong>注意:</strong> 由于npm是国外的，可能因为网速的原因会安装失败，这是则可使用cnpm安装</p>
-<blockquote>
-<p>3.全局安装vue-cli</p>
-</blockquote>
-<p>在命令行输入：</p>
-<pre><code>npm 安装： npm install -g vue-cli
-cnpm 安装： cnpm install -g vue-cli</code></pre>
-<p>安装完成后验证：</p>
-<pre><code>vue -V</code></pre>
-<p>如果出现版本号则安装成功<br><strong>注意:</strong> 这里的”V”是大写</p>
-<p><strong>如上述操作都完成，就可进入下一步，创建项目</strong></p>
-<blockquote>
-<p>4.创建项目</p>
-</blockquote>
-<pre><code>vue init webpack demo（项目名，小写）</code></pre>
-<p>Project name（项目名：默认“demo”）<br>Project description （项目介绍：默认 A Vue.js project）<br>Author （作者名）<br>Vue build （Use arrow keys）<br>Runtime + Compiler：recommended for most users（运行加编译）<br>Runtime—only：about 6KB lighter min+gzip，but templaters（or any Vue-spcific HTML）are ONLY allowed in .Vue files - render functions are required elsewhere（仅运行）<br>Install vue-router ? （Y/n）（安装Vue路由？）<br>Use ESLint to lint your code ? （Y/n）（使用ESlint对代码进行校验？）<br>Set up unit tests （Y/n）（使用单元测试？）<br>Setup e2e tests with Nightwatch？ （Y/n）（使用e2e测试？）<br>Should we run npm install fr you after the project has been created?（recommended）（Use arrow keys）<br>Yes，use Npm<br>Yes，use Yarn<br>No，I whill handle that myself<br>如果npm可以正常使用，选第一项<br>如果使用淘宝镜像选最后一个<br>根据提示<br>cd demo<br>cnpm install （or if using yarn ：yarn）<br>npm run dev</p>
-]]></content>
-      <categories>
-        <category>vue</category>
-      </categories>
-      <tags>
-        <tag>vue</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>vue-cli中使用Vuex</title>
     <url>/2021/01/05/vue-cli%E4%B8%AD%E4%BD%BF%E7%94%A8Vuex/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="vue-cli中使用Vuex"><a href="#vue-cli中使用Vuex" class="headerlink" title="vue-cli中使用Vuex"></a>vue-cli中使用Vuex</h2><blockquote>
@@ -125,6 +82,96 @@ import Vuex from &#39;vuex&#39;</code></pre>
 </blockquote>
 <p>导入store,如图示：<br><img src="https://img-blog.csdnimg.cn/20200713103727781.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3oxOTA1Nzk2MjM0,size_16,color_FFFFFF,t_70" alt="[外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-Fqt4l8vJ-1594607745240)(./1591187580503.png)]"></p>
 <p>注入到根实例：<br><img src="https://img-blog.csdnimg.cn/20200713103737512.png" alt="[外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-ae2n4qiM-1594607745243)(./1591187691767.png)]"></p>
+]]></content>
+      <categories>
+        <category>vue</category>
+      </categories>
+      <tags>
+        <tag>vue</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo部署到Github上</title>
+    <url>/2021/01/08/hexo%E9%83%A8%E7%BD%B2%E5%88%B0Github%E4%B8%8A/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>上一篇文章利用hexo框架和Ayer主题在本地搭建了一个精美的博客，如果想要发布在互联网上，还是要把它部署到网站上，我这里把它部署到<strong>Github Page</strong>上去。<br><a href="https://github.com/"><strong>Github官网</strong></a></p>
+<blockquote>
+<h4 id="一，注册或登录Github账号"><a href="#一，注册或登录Github账号" class="headerlink" title="一，注册或登录Github账号"></a>一，注册或登录Github账号</h4></blockquote>
+<p>打开<a href="https://github.com/"><strong>Github官网</strong></a>，如图：<br><img src="https://img-blog.csdnimg.cn/20210108105959407.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3oxOTA1Nzk2MjM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>点击右上角<strong>Sing up</strong>注册，填写用户名，邮箱，密码。注意，此处用户名是唯一ID，建议取个好的名字。点击注册后会发送一封验证邮件到填写的邮箱，登录自己的邮箱点击链接进行验证，GitHub 账号就注册好了：<br><img src="https://img-blog.csdnimg.cn/20210108110419398.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3oxOTA1Nzk2MjM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<blockquote>
+<h4 id="二，创建-GitHub-Pages-仓库"><a href="#二，创建-GitHub-Pages-仓库" class="headerlink" title="二，创建 GitHub Pages 仓库"></a>二，创建 GitHub Pages 仓库</h4></blockquote>
+<p>点击右上角Sign in登录后，点击左上角New新建仓库。<br><img src="https://img-blog.csdnimg.cn/20210108111200314.png![%E5%9C%A8%E8%BF%99%E9%87%8C%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87%E6%8F%8F%E8%BF%B0](https://img-blog.csdnimg.cn/20210108111552493.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3oxOTA1Nzk2MjM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p>由于每个 GitHub 账户只能建立一个 GitHub Pages 页面，所以 Repository name 必须填 <strong>&lt;你的用户名&gt;.github.io</strong>，否则就会建立一个普通仓库，GitHub Pages 功能不会生效。比如用户名zzzzz，Repository name 这里就填zzzzz.github.io.</p>
+<p>Description 填写仓库描述，可不填。</p>
+<p>注意勾选 Public ，否则 GitHub Pages 功能不会生效。勾选 Add a README file，会自动生成一个 readme.md文件。</p>
+<p>最后点击Create repository创建仓库。<br><img src="https://img-blog.csdnimg.cn/20210108111743726.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3oxOTA1Nzk2MjM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<blockquote>
+<h4 id="三，GitHub-Pages-发布"><a href="#三，GitHub-Pages-发布" class="headerlink" title="三，GitHub Pages 发布"></a>三，GitHub Pages 发布</h4></blockquote>
+<p> <strong>1.  配置 Git 参数</strong><br>在博客根目录下，右键，打开<strong>Git Bash Here</strong>。配置用户名和邮箱，这两个参数用于 Git 提交时的身份识别。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 其中 username 和 username@XXX.com 是你注册 GitHub 的用户名和邮箱</span><br><span class="line">git config --global user.name &quot;username&quot;</span><br><span class="line">git config --global user.email &quot;username@XXX.com&quot;</span><br></pre></td></tr></table></figure>
+<p>生成 <strong>SSH keys</strong>输入下面命令，然后一直按回车，直到结束：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 其中 username@XXX.com 是你注册 GitHub 的邮箱</span><br><span class="line">ssh-keygen -t rsa -C &quot;username@XXX.com&quot;</span><br></pre></td></tr></table></figure>
+<p>输入下面的命令，查看公钥内容，应该是一个ssh-rsa开头，以你的邮箱结尾的。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># cat后面的路径就是上图中的公钥文件路径，直接复制过来就可以</span><br><span class="line">cat &#x2F;c&#x2F;Users&#x2F;XXX&#x2F;.ssh&#x2F;id_rsa.pub</span><br></pre></td></tr></table></figure>
+<p>复制公钥内容（其实在Git Bash命令行里，默认选中文字松开鼠标就会自动把选中内容复制到剪贴板，默认鼠标中键是粘贴）。</p>
+<p>打开自己的 Github 主页，点击右上角的头像，点击Settings。<br><img src="https://img-blog.csdnimg.cn/20210108112551448.png" alt="在这里插入图片描述"><br>点击<strong>SSH and GPG keys</strong>，然后点击<strong>New SSH keys</strong>：<br><img src="https://img-blog.csdnimg.cn/20210108112743532.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3oxOTA1Nzk2MjM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>Title 可以随便起一个自己喜欢的名字，Key 填写上一步复制的公钥内容，然后点击Add SSH key：<br><img src="https://img-blog.csdnimg.cn/20210108112837889.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3oxOTA1Nzk2MjM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>最后执行下面的命令，测试一下 Git 参数是否配置成功。出现你的用户名和successfully字样，说明配置成功。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+<blockquote>
+<h4 id="四，安装Hexo发布插件"><a href="#四，安装Hexo发布插件" class="headerlink" title="四，安装Hexo发布插件"></a>四，安装Hexo发布插件</h4></blockquote>
+<p>在博客根目录下，右键，打开<strong>Git Bash Here</strong></p>
+<p>输入下面的命令，安装<strong>hexo-deployer-git</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git</span><br></pre></td></tr></table></figure>
+<blockquote>
+<h4 id="五，发布呀"><a href="#五，发布呀" class="headerlink" title="五，发布呀"></a>五，发布呀</h4></blockquote>
+<p>打开博客根目录配置文件(D:\MyBlog_config.yaml)，拉到文件最后一行，修改为下面的配置，保存。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 其中 xxxxxx 是你的GitHub用户名</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:xxxxxx&#x2F;xxxxxx.github.io.git</span><br><span class="line">  branch: main</span><br></pre></td></tr></table></figure>
+<p>执行下列命令;</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 注意最后变成d了</span><br><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
+<p>命令执行完毕，打开浏览器，输入网址https://你的用户名.github.io，就可以看到了。<br><img src="https://img-blog.csdnimg.cn/20210108113724558.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3oxOTA1Nzk2MjM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>至此全部完成。</p>
+]]></content>
+      <categories>
+        <category>Github</category>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>Github</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>vue-cli脚手架的搭建及创建项目</title>
+    <url>/2021/01/04/vue-cli%E8%84%9A%E6%89%8B%E6%9E%B6%E7%9A%84%E6%90%AD%E5%BB%BA%E5%8F%8A%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="vue-cli脚手架的搭建及创建项目"><a href="#vue-cli脚手架的搭建及创建项目" class="headerlink" title="vue-cli脚手架的搭建及创建项目"></a>vue-cli脚手架的搭建及创建项目</h1><blockquote>
+<p>1.安装node.js环境</p>
+</blockquote>
+<p>官网下载：<a href="https://nodejs.org/en/download/">https://nodejs.org/en/download/</a><br>一直默认就行，安装完成后需在cmd中验证是否安装成功：</p>
+<pre><code>node -v
+npm -v</code></pre>
+<p>出现版本号则说明安装成功<br><strong>注意：</strong> node的版本尽量高一些，因为vue运行需要基于npm一定的版本（最好是3.x.x以上），版本低了有可能会出错，而npm是随node的安装自动安装的，直接安装最新的node，npm的版本号也会变高的，不用再做更多的操作</p>
+<blockquote>
+<p>2.使用npm或cnpm（淘宝镜像）全局安装 webpack</p>
+</blockquote>
+<p>使用命令工具输入：</p>
+<pre><code>npm 安装： npm install webpack webpack-cli -g
+cnpm 安装： npm install webpack webpack-cli -g</code></pre>
+<p>安装完成后，检验是否安装成功：</p>
+<pre><code>webpack -v</code></pre>
+<p>如出现版本号则说明安装成功</p>
+<p><strong>注意:</strong> 由于npm是国外的，可能因为网速的原因会安装失败，这是则可使用cnpm安装</p>
+<blockquote>
+<p>3.全局安装vue-cli</p>
+</blockquote>
+<p>在命令行输入：</p>
+<pre><code>npm 安装： npm install -g vue-cli
+cnpm 安装： cnpm install -g vue-cli</code></pre>
+<p>安装完成后验证：</p>
+<pre><code>vue -V</code></pre>
+<p>如果出现版本号则安装成功<br><strong>注意:</strong> 这里的”V”是大写</p>
+<p><strong>如上述操作都完成，就可进入下一步，创建项目</strong></p>
+<blockquote>
+<p>4.创建项目</p>
+</blockquote>
+<pre><code>vue init webpack demo（项目名，小写）</code></pre>
+<p>Project name（项目名：默认“demo”）<br>Project description （项目介绍：默认 A Vue.js project）<br>Author （作者名）<br>Vue build （Use arrow keys）<br>Runtime + Compiler：recommended for most users（运行加编译）<br>Runtime—only：about 6KB lighter min+gzip，but templaters（or any Vue-spcific HTML）are ONLY allowed in .Vue files - render functions are required elsewhere（仅运行）<br>Install vue-router ? （Y/n）（安装Vue路由？）<br>Use ESLint to lint your code ? （Y/n）（使用ESlint对代码进行校验？）<br>Set up unit tests （Y/n）（使用单元测试？）<br>Setup e2e tests with Nightwatch？ （Y/n）（使用e2e测试？）<br>Should we run npm install fr you after the project has been created?（recommended）（Use arrow keys）<br>Yes，use Npm<br>Yes，use Yarn<br>No，I whill handle that myself<br>如果npm可以正常使用，选第一项<br>如果使用淘宝镜像选最后一个<br>根据提示<br>cd demo<br>cnpm install （or if using yarn ：yarn）<br>npm run dev</p>
 ]]></content>
       <categories>
         <category>vue</category>
