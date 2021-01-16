@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-01-08T03:47:08.371Z</updated>
+  <updated>2021-01-16T02:42:04.617Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>个人收藏的网站</title>
+    <link href="http://example.com/2021/01/16/%E4%B8%AA%E4%BA%BA%E6%94%B6%E8%97%8F%E7%9A%84%E7%BD%91%E7%AB%99/"/>
+    <id>http://example.com/2021/01/16/%E4%B8%AA%E4%BA%BA%E6%94%B6%E8%97%8F%E7%9A%84%E7%BD%91%E7%AB%99/</id>
+    <published>2021-01-16T02:01:27.000Z</published>
+    <updated>2021-01-16T02:42:04.617Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="网站" scheme="http://example.com/categories/%E7%BD%91%E7%AB%99/"/>
+    
+    <category term="白嫖" scheme="http://example.com/categories/%E7%BD%91%E7%AB%99/%E7%99%BD%E5%AB%96/"/>
+    
+    
+    <category term="网站" scheme="http://example.com/tags/%E7%BD%91%E7%AB%99/"/>
+    
+  </entry>
   
   <entry>
     <title>hexo部署到Github上</title>
