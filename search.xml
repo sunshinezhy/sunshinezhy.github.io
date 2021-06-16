@@ -1,107 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search> 
-  
-  
-    
-    <entry>
-      <title>找工作</title>
-      <link href="/2021/06/15/%E6%89%BE%E5%B7%A5%E4%BD%9C/"/>
-      <url>/2021/06/15/%E6%89%BE%E5%B7%A5%E4%BD%9C/</url>
-      
-        <content type="html"><![CDATA[<h2 id="找工作"><a href="#找工作" class="headerlink" title="找工作"></a>找工作</h2><p>&emsp;</p><p>&ensp;&ensp; 端午节已经过去，不能再在家呆着无所事事。打开boss消息99+，但是有90%的是游戏类的销售“游戏托”。剩余的都是其他的销售。对于我这个嘴笨、迷惑的人。销售无疑是我不可能触及的东西。怕把活的给人家说死了。</p><p>&emsp;</p><p>&ensp;&ensp; boss无果，只能向同学寻求帮助。同学决定让我和他一起进场。假期的工作大概是有着落了。这还是我人生中第一次体验进场，不知道在这次进场的过程中能不能听到我考入本科的消息。或许，我还得要做好打长工的准备。</p><p>&emsp;</p><p>&ensp;&ensp; 如果升本无望，那就先挣他个20000块钱，然后报班学习前端。</p><p>&emsp;</p><p>&ensp;&ensp; 加油！不要让自己迷茫下去，不出去看看，自己想要什么都不知道。</p>]]></content>
-      
-      
+<search>
+  <entry>
+    <title>hexo 搭建个人博客</title>
+    <url>/2021/06/04/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%951/</url>
+    <content><![CDATA[<blockquote>
+<h4 id="一，下载node-js"><a href="#一，下载node-js" class="headerlink" title="一，下载node.js"></a>一，<strong>下载node.js</strong></h4></blockquote>
+<p>前往<a href="https://nodejs.org/zh-cn/">node.js中文官网</a>下载，安装也很简单一直下一步就可以了。完成就绪，验证一下是否安装成功：按住<strong>win+R</strong>键打开运行框，输入<strong>cmd</strong>进入命令窗口，输入<strong>node -v</strong>回车，显示出版本号则是成功。<br><img "" class="lazyload" data-original="https://img-blog.csdnimg.cn/20210106212333789.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="在这里插入图片描述"></p>
+<blockquote>
+<h4 id="二，安装Git"><a href="#二，安装Git" class="headerlink" title="二，安装Git"></a>二，<strong>安装Git</strong></h4></blockquote>
+<ol>
+<li><p><strong>下载</strong><br>前往<a href="https://git-scm.com/">Git官网下载</a>,由于网络环境因素，可能下载的非常慢，可以复制下载链接到迅雷下载。</p>
+</li>
+<li><p><strong>安装</strong><br>没有特殊需要的话一直Next就行了。<br>安装完成在桌面空白处单击右键，就会发现多了两个选项：<br><img "" class="lazyload" data-original="https://img-blog.csdnimg.cn/20210106213709127.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="在这里插入图片描述"></p>
+<p>点击<strong>Git Bash Here</strong>打开命令窗口，输入<strong>git –version</strong>，回车，如果出现版本号则说明安装成功。<br><img "" class="lazyload" data-original="https://img-blog.csdnimg.cn/20210106214245114.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="在这里插入图片描述"></p>
+<blockquote>
+<h4 id="三，安装Hexo"><a href="#三，安装Hexo" class="headerlink" title="三，安装Hexo"></a>三，<strong>安装Hexo</strong></h4></blockquote>
+<p>前面的准备工作已经完成，下面就开始Hexo的安装。</p>
+</li>
+<li><p><strong>本地安装hexo</strong><br>首先在本地建立一个空文件夹，用来存放hexo文件和以后要写的博客文件，注意不要有中文。我在这里是在D盘建了一个MyBlog文件夹。<br>在新建的文件夹里单击右键，选择<strong>Git Bash Here</strong>，进入命令窗口依次输入以下命令：</p>
+</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 安装 hexo 框架</span><br><span class="line">npm install -g hexo-cli</span><br><span class="line"></span><br><span class="line"># 初始化文件夹</span><br><span class="line">hexo init</span><br><span class="line"></span><br><span class="line"># 安装 hexo 依赖包</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
+<p>这三条命令不是一下全输进去而是输一个回车一下。三条命令执行成功，Hexo 框架在本地就已经搭建好了。<br> 2. <strong>查看本地博客效果</strong><br>在<strong>Git Bash Here</strong>命令行窗口依次输入以下代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 生成静态网站</span><br><span class="line">hexo g</span><br><span class="line"># 启动服务器</span><br><span class="line">hexo s</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>此时，打开浏览器，输入网址<a href="http://localhost:4000/%EF%BC%8C%E5%B0%B1%E5%8F%AF%E4%BB%A5%E7%9C%8B%E5%88%B0%E6%88%91%E4%BB%AC">http://localhost:4000/，就可以看到我们</a> Hexo 搭建的博客示例了。如下图（这是hexo默认主题）：<br><img "" class="lazyload" data-original="https://img-blog.csdnimg.cn/20210107112839496.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3oxOTA1Nzk2MjM0,size_16,color_FFFFFF,t_70" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="在这里插入图片描述"></p>
+]]></content>
       <categories>
-          
-          <category> 日记 </category>
-          
+        <category>博客</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 生活日记 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>大专毕业</title>
-      <link href="/2021/06/11/%E5%A4%A7%E4%B8%93%E6%AF%95%E4%B8%9A/"/>
-      <url>/2021/06/11/%E5%A4%A7%E4%B8%93%E6%AF%95%E4%B8%9A/</url>
-      
-        <content type="html"><![CDATA[<h2 id="大专毕业"><a href="#大专毕业" class="headerlink" title="大专毕业"></a>大专毕业</h2><blockquote><p>专升本考试</p></blockquote><p>&emsp;</p><h3 id="ensp-ensp-ensp-ensp-2021年6月10日，专升本考试结束。这次考试或许是公平的，或许是资本的。当我考完英语出去时听到的一句话：我们做过原题呀，我们老师讲过。这几句让我立即想到的是泄题。回到寝室打开手机，翻一翻微博，果然，某机构泄题躺在热搜上。又是泄题，又是这机构。想一想他们的老师可“真伟大”，为了把学生送到本科，不惜把自己送进监狱。"><a href="#ensp-ensp-ensp-ensp-2021年6月10日，专升本考试结束。这次考试或许是公平的，或许是资本的。当我考完英语出去时听到的一句话：我们做过原题呀，我们老师讲过。这几句让我立即想到的是泄题。回到寝室打开手机，翻一翻微博，果然，某机构泄题躺在热搜上。又是泄题，又是这机构。想一想他们的老师可“真伟大”，为了把学生送到本科，不惜把自己送进监狱。" class="headerlink" title="&ensp;&ensp;&ensp;&ensp; 2021年6月10日，专升本考试结束。这次考试或许是公平的，或许是资本的。当我考完英语出去时听到的一句话：我们做过原题呀，我们老师讲过。这几句让我立即想到的是泄题。回到寝室打开手机，翻一翻微博，果然，某机构泄题躺在热搜上。又是泄题，又是这机构。想一想他们的老师可“真伟大”，为了把学生送到本科，不惜把自己送进监狱。"></a>&ensp;&ensp;&ensp;&ensp; 2021年6月10日，专升本考试结束。这次考试或许是公平的，或许是资本的。当我考完英语出去时听到的一句话：我们做过原题呀，我们老师讲过。这几句让我立即想到的是泄题。回到寝室打开手机，翻一翻微博，果然，某机构泄题躺在热搜上。又是泄题，又是这机构。想一想他们的老师可“真伟大”，为了把学生送到本科，不惜把自己送进监狱。</h3><h3 id="ensp-ensp-ensp-ensp-至于下午的高数，没做完，好几道大题没做。这不能抱怨什么，只是自己的错误。"><a href="#ensp-ensp-ensp-ensp-至于下午的高数，没做完，好几道大题没做。这不能抱怨什么，只是自己的错误。" class="headerlink" title="&ensp;&ensp;&ensp;&ensp; 至于下午的高数，没做完，好几道大题没做。这不能抱怨什么，只是自己的错误。"></a>&ensp;&ensp;&ensp;&ensp; 至于下午的高数，没做完，好几道大题没做。这不能抱怨什么，只是自己的错误。</h3><h3 id="ensp-ensp-ensp-ensp-这些个情况自己也有些许的愤怒，可是最后自己又能怎样呢。而且你不能因为自己没钱而去怪罪那些有钱的吧。况且这种情况也是由于自己的不努力造成的。如果你真具备实力，那些是你的东西，它永远是你的，谁也抢不走。"><a href="#ensp-ensp-ensp-ensp-这些个情况自己也有些许的愤怒，可是最后自己又能怎样呢。而且你不能因为自己没钱而去怪罪那些有钱的吧。况且这种情况也是由于自己的不努力造成的。如果你真具备实力，那些是你的东西，它永远是你的，谁也抢不走。" class="headerlink" title="&ensp;&ensp;&ensp;&ensp; 这些个情况自己也有些许的愤怒，可是最后自己又能怎样呢。而且你不能因为自己没钱而去怪罪那些有钱的吧。况且这种情况也是由于自己的不努力造成的。如果你真具备实力，那些是你的东西，它永远是你的，谁也抢不走。"></a>&ensp;&ensp;&ensp;&ensp; 这些个情况自己也有些许的愤怒，可是最后自己又能怎样呢。而且你不能因为自己没钱而去怪罪那些有钱的吧。况且这种情况也是由于自己的不努力造成的。如果你真具备实力，那些是你的东西，它永远是你的，谁也抢不走。</h3><h3 id="ensp-ensp-ensp-ensp-至于最后的成绩6月25号才能查询，至于是否能上本科，还是不报那么大的希望，赶快找一份工作，为自己以后做打算。"><a href="#ensp-ensp-ensp-ensp-至于最后的成绩6月25号才能查询，至于是否能上本科，还是不报那么大的希望，赶快找一份工作，为自己以后做打算。" class="headerlink" title="&ensp;&ensp;&ensp;&ensp; 至于最后的成绩6月25号才能查询，至于是否能上本科，还是不报那么大的希望，赶快找一份工作，为自己以后做打算。"></a>&ensp;&ensp;&ensp;&ensp; 至于最后的成绩6月25号才能查询，至于是否能上本科，还是不报那么大的希望，赶快找一份工作，为自己以后做打算。</h3><p>&emsp;</p><blockquote><p>离校</p></blockquote><p>&emsp;</p><h3 id="ensp-ensp-ensp-ensp-专升本考试也结束了，毕业证也都领取了，在今天回到了家里，但是心情并没有回家的喜悦。满脑子想的都是如果考不上该去哪工作，自己这三年学到东西了吗？混了个毕业证但是有技术吗？迷茫，害怕，或许还有些许懦弱。"><a href="#ensp-ensp-ensp-ensp-专升本考试也结束了，毕业证也都领取了，在今天回到了家里，但是心情并没有回家的喜悦。满脑子想的都是如果考不上该去哪工作，自己这三年学到东西了吗？混了个毕业证但是有技术吗？迷茫，害怕，或许还有些许懦弱。" class="headerlink" title="&ensp;&ensp;&ensp;&ensp; 专升本考试也结束了，毕业证也都领取了，在今天回到了家里，但是心情并没有回家的喜悦。满脑子想的都是如果考不上该去哪工作，自己这三年学到东西了吗？混了个毕业证但是有技术吗？迷茫，害怕，或许还有些许懦弱。"></a>&ensp;&ensp;&ensp;&ensp; 专升本考试也结束了，毕业证也都领取了，在今天回到了家里，但是心情并没有回家的喜悦。满脑子想的都是如果考不上该去哪工作，自己这三年学到东西了吗？混了个毕业证但是有技术吗？迷茫，害怕，或许还有些许懦弱。</h3><p>&emsp;</p><blockquote><p>选择</p></blockquote><p>&emsp;</p><h3 id="ensp-ensp-ensp-ensp-1-驾照——不会吧，真的会有男孩子不喜欢车？呵，是呀，我对车真的不感兴趣，丝毫，完全不感兴趣。车牌也不认几个。驾照报了，但没去考过。"><a href="#ensp-ensp-ensp-ensp-1-驾照——不会吧，真的会有男孩子不喜欢车？呵，是呀，我对车真的不感兴趣，丝毫，完全不感兴趣。车牌也不认几个。驾照报了，但没去考过。" class="headerlink" title="&ensp;&ensp;&ensp;&ensp; 1.驾照——不会吧，真的会有男孩子不喜欢车？呵，是呀，我对车真的不感兴趣，丝毫，完全不感兴趣。车牌也不认几个。驾照报了，但没去考过。"></a>&ensp;&ensp;&ensp;&ensp; 1.驾照——不会吧，真的会有男孩子不喜欢车？呵，是呀，我对车真的不感兴趣，丝毫，完全不感兴趣。车牌也不认几个。驾照报了，但没去考过。</h3><h3 id="ensp-ensp-ensp-ensp-2-打工——自己想要找到什么工作？自己会什么，对什么感兴趣？这些都需要思考。"><a href="#ensp-ensp-ensp-ensp-2-打工——自己想要找到什么工作？自己会什么，对什么感兴趣？这些都需要思考。" class="headerlink" title="&ensp;&ensp;&ensp;&ensp; 2.打工——自己想要找到什么工作？自己会什么，对什么感兴趣？这些都需要思考。"></a>&ensp;&ensp;&ensp;&ensp; 2.打工——自己想要找到什么工作？自己会什么，对什么感兴趣？这些都需要思考。</h3><p>&emsp;</p><blockquote><p>最后一件事</p></blockquote><p>&emsp;</p><h1 id="ensp-ensp-ensp-ensp-加油！有想法就去做。不要让自己在虚无中度过。"><a href="#ensp-ensp-ensp-ensp-加油！有想法就去做。不要让自己在虚无中度过。" class="headerlink" title="&ensp;&ensp;&ensp;&ensp; 加油！有想法就去做。不要让自己在虚无中度过。"></a>&ensp;&ensp;&ensp;&ensp; 加油！有想法就去做。不要让自己在虚无中度过。</h1>]]></content>
-      
-      
+      <tags>
+        <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>在vue-cli中使用vuex</title>
+    <url>/2021/06/05/%E5%9C%A8vue-cli%E4%B8%AD%E4%BD%BF%E7%94%A8vuex/</url>
+    <content><![CDATA[<h2 id="vue-cli中使用Vuex"><a href="#vue-cli中使用Vuex" class="headerlink" title="vue-cli中使用Vuex"></a>vue-cli中使用Vuex</h2><blockquote>
+<p>安装Vuex</p>
+</blockquote>
+<pre><code>npm install vuex --save
+cnpm install vuex --save
+</code></pre>
+<p>下载后点击 package.json 查看是否有vuex,如下图所示（有则说明成功了）：<br><img "" class="lazyload" data-original="https://img-blog.csdnimg.cn/202007131036185.png?x-oss70" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="在这里插入图片描述"></p>
+<blockquote>
+<p>在模块化打包系统中，必须显示的通过Vue.use( ) 来安装Vuex</p>
+</blockquote>
+<p>在main.js中导入</p>
+<pre><code>import Vuex from &#39;vuex&#39;
+Vue.use(Vue)
+</code></pre>
+<blockquote>
+<p>创建仓库store</p>
+</blockquote>
+<p>在项目<strong>src</strong>文件夹里面新建一个<strong>store</strong>文件夹，然后在<strong>store</strong>文件夹中新建一个文件<strong>index.js</strong>如下图所示：<br><img "" class="lazyload" data-original="https://img-blog.csdnimg.cn/20200713103706444.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="[外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-59xvLSOu-1594607745238)(./1591186828478.png)]"></p>
+<p> 在文件中引入依赖模块</p>
+<pre><code>import Vue from &#39;vue&#39;
+import Vuex from &#39;vuex&#39;
+</code></pre>
+<p>在vue中使用Vuex</p>
+<pre><code>Vue.use(Vuex)
+</code></pre>
+<p>创建仓库(根据实际需求在里面添加自定义属性)</p>
+<pre><code>const store = new Vuex.Store(&#123;
+
+&#125;)
+</code></pre>
+<p>导出</p>
+<pre><code>export default store
+</code></pre>
+<blockquote>
+<p>把仓库注入根实例里面</p>
+</blockquote>
+<p>导入store,如图示：<br><img "" class="lazyload" data-original="https://img-blog.csdnimg.cn/20200713103727781.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3oxOTA1Nzk2MjM0,size_16,color_FFFFFF,t_70" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="[外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-Fqt4l8vJ-1594607745240)(./1591187580503.png)]"></p>
+<p>注入到根实例：<br><img "" class="lazyload" data-original="https://img-blog.csdnimg.cn/20200713103737512.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="[外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-ae2n4qiM-1594607745243)(./1591187691767.png)]"></p>
+]]></content>
       <categories>
-          
-          <category> 日记 </category>
-          
+        <category>vue</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 生活日记 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>在vue-cli中使用vuex</title>
-      <link href="/2021/06/05/%E5%9C%A8vue-cli%E4%B8%AD%E4%BD%BF%E7%94%A8vuex/"/>
-      <url>/2021/06/05/%E5%9C%A8vue-cli%E4%B8%AD%E4%BD%BF%E7%94%A8vuex/</url>
-      
-        <content type="html"><![CDATA[<h2 id="vue-cli中使用Vuex"><a href="#vue-cli中使用Vuex" class="headerlink" title="vue-cli中使用Vuex"></a>vue-cli中使用Vuex</h2><blockquote><p>安装Vuex</p></blockquote><pre><code>npm install vuex --savecnpm install vuex --save</code></pre><p>下载后点击 package.json 查看是否有vuex,如下图所示（有则说明成功了）：<br><img "" class="lazyload" data-original="https://img-blog.csdnimg.cn/202007131036185.png?x-oss70" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="在这里插入图片描述"></p><blockquote><p>在模块化打包系统中，必须显示的通过Vue.use( ) 来安装Vuex</p></blockquote><p>在main.js中导入</p><pre><code>import Vuex from &#39;vuex&#39;Vue.use(Vue)</code></pre><blockquote><p>创建仓库store</p></blockquote><p>在项目<strong>src</strong>文件夹里面新建一个<strong>store</strong>文件夹，然后在<strong>store</strong>文件夹中新建一个文件<strong>index.js</strong>如下图所示：<br><img "" class="lazyload" data-original="https://img-blog.csdnimg.cn/20200713103706444.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="[外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-59xvLSOu-1594607745238)(./1591186828478.png)]"></p><p> 在文件中引入依赖模块</p><pre><code>import Vue from &#39;vue&#39;import Vuex from &#39;vuex&#39;</code></pre><p>在vue中使用Vuex</p><pre><code>Vue.use(Vuex)</code></pre><p>创建仓库(根据实际需求在里面添加自定义属性)</p><pre><code>const store = new Vuex.Store(&#123;&#125;)</code></pre><p>导出</p><pre><code>export default store</code></pre><blockquote><p>把仓库注入根实例里面</p></blockquote><p>导入store,如图示：<br><img "" class="lazyload" data-original="https://img-blog.csdnimg.cn/20200713103727781.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3oxOTA1Nzk2MjM0,size_16,color_FFFFFF,t_70" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="[外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-Fqt4l8vJ-1594607745240)(./1591187580503.png)]"></p><p>注入到根实例：<br><img "" class="lazyload" data-original="https://img-blog.csdnimg.cn/20200713103737512.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="[外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-ae2n4qiM-1594607745243)(./1591187691767.png)]"></p>]]></content>
-      
-      
+      <tags>
+        <tag>vue</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>大专毕业</title>
+    <url>/2021/06/11/%E5%A4%A7%E4%B8%93%E6%AF%95%E4%B8%9A/</url>
+    <content><![CDATA[<h2 id="大专毕业"><a href="#大专毕业" class="headerlink" title="大专毕业"></a>大专毕业</h2><blockquote>
+<p>专升本考试</p>
+</blockquote>
+<p>&emsp;</p>
+<h3 id="ensp-ensp-ensp-ensp-2021年6月10日，专升本考试结束。这次考试或许是公平的，或许是资本的。当我考完英语出去时听到的一句话：我们做过原题呀，我们老师讲过。这几句让我立即想到的是泄题。回到寝室打开手机，翻一翻微博，果然，某机构泄题躺在热搜上。又是泄题，又是这机构。想一想他们的老师可“真伟大”，为了把学生送到本科，不惜把自己送进监狱。"><a href="#ensp-ensp-ensp-ensp-2021年6月10日，专升本考试结束。这次考试或许是公平的，或许是资本的。当我考完英语出去时听到的一句话：我们做过原题呀，我们老师讲过。这几句让我立即想到的是泄题。回到寝室打开手机，翻一翻微博，果然，某机构泄题躺在热搜上。又是泄题，又是这机构。想一想他们的老师可“真伟大”，为了把学生送到本科，不惜把自己送进监狱。" class="headerlink" title="&ensp;&ensp;&ensp;&ensp; 2021年6月10日，专升本考试结束。这次考试或许是公平的，或许是资本的。当我考完英语出去时听到的一句话：我们做过原题呀，我们老师讲过。这几句让我立即想到的是泄题。回到寝室打开手机，翻一翻微博，果然，某机构泄题躺在热搜上。又是泄题，又是这机构。想一想他们的老师可“真伟大”，为了把学生送到本科，不惜把自己送进监狱。"></a>&ensp;&ensp;&ensp;&ensp; 2021年6月10日，专升本考试结束。这次考试或许是公平的，或许是资本的。当我考完英语出去时听到的一句话：我们做过原题呀，我们老师讲过。这几句让我立即想到的是泄题。回到寝室打开手机，翻一翻微博，果然，某机构泄题躺在热搜上。又是泄题，又是这机构。想一想他们的老师可“真伟大”，为了把学生送到本科，不惜把自己送进监狱。</h3><h3 id="ensp-ensp-ensp-ensp-至于下午的高数，没做完，好几道大题没做。这不能抱怨什么，只是自己的错误。"><a href="#ensp-ensp-ensp-ensp-至于下午的高数，没做完，好几道大题没做。这不能抱怨什么，只是自己的错误。" class="headerlink" title="&ensp;&ensp;&ensp;&ensp; 至于下午的高数，没做完，好几道大题没做。这不能抱怨什么，只是自己的错误。"></a>&ensp;&ensp;&ensp;&ensp; 至于下午的高数，没做完，好几道大题没做。这不能抱怨什么，只是自己的错误。</h3><h3 id="ensp-ensp-ensp-ensp-这些个情况自己也有些许的愤怒，可是最后自己又能怎样呢。而且你不能因为自己没钱而去怪罪那些有钱的吧。况且这种情况也是由于自己的不努力造成的。如果你真具备实力，那些是你的东西，它永远是你的，谁也抢不走。"><a href="#ensp-ensp-ensp-ensp-这些个情况自己也有些许的愤怒，可是最后自己又能怎样呢。而且你不能因为自己没钱而去怪罪那些有钱的吧。况且这种情况也是由于自己的不努力造成的。如果你真具备实力，那些是你的东西，它永远是你的，谁也抢不走。" class="headerlink" title="&ensp;&ensp;&ensp;&ensp; 这些个情况自己也有些许的愤怒，可是最后自己又能怎样呢。而且你不能因为自己没钱而去怪罪那些有钱的吧。况且这种情况也是由于自己的不努力造成的。如果你真具备实力，那些是你的东西，它永远是你的，谁也抢不走。"></a>&ensp;&ensp;&ensp;&ensp; 这些个情况自己也有些许的愤怒，可是最后自己又能怎样呢。而且你不能因为自己没钱而去怪罪那些有钱的吧。况且这种情况也是由于自己的不努力造成的。如果你真具备实力，那些是你的东西，它永远是你的，谁也抢不走。</h3><h3 id="ensp-ensp-ensp-ensp-至于最后的成绩6月25号才能查询，至于是否能上本科，还是不报那么大的希望，赶快找一份工作，为自己以后做打算。"><a href="#ensp-ensp-ensp-ensp-至于最后的成绩6月25号才能查询，至于是否能上本科，还是不报那么大的希望，赶快找一份工作，为自己以后做打算。" class="headerlink" title="&ensp;&ensp;&ensp;&ensp; 至于最后的成绩6月25号才能查询，至于是否能上本科，还是不报那么大的希望，赶快找一份工作，为自己以后做打算。"></a>&ensp;&ensp;&ensp;&ensp; 至于最后的成绩6月25号才能查询，至于是否能上本科，还是不报那么大的希望，赶快找一份工作，为自己以后做打算。</h3><p>&emsp;</p>
+<blockquote>
+<p>离校</p>
+</blockquote>
+<p>&emsp;</p>
+<h3 id="ensp-ensp-ensp-ensp-专升本考试也结束了，毕业证也都领取了，在今天回到了家里，但是心情并没有回家的喜悦。满脑子想的都是如果考不上该去哪工作，自己这三年学到东西了吗？混了个毕业证但是有技术吗？迷茫，害怕，或许还有些许懦弱。"><a href="#ensp-ensp-ensp-ensp-专升本考试也结束了，毕业证也都领取了，在今天回到了家里，但是心情并没有回家的喜悦。满脑子想的都是如果考不上该去哪工作，自己这三年学到东西了吗？混了个毕业证但是有技术吗？迷茫，害怕，或许还有些许懦弱。" class="headerlink" title="&ensp;&ensp;&ensp;&ensp; 专升本考试也结束了，毕业证也都领取了，在今天回到了家里，但是心情并没有回家的喜悦。满脑子想的都是如果考不上该去哪工作，自己这三年学到东西了吗？混了个毕业证但是有技术吗？迷茫，害怕，或许还有些许懦弱。"></a>&ensp;&ensp;&ensp;&ensp; 专升本考试也结束了，毕业证也都领取了，在今天回到了家里，但是心情并没有回家的喜悦。满脑子想的都是如果考不上该去哪工作，自己这三年学到东西了吗？混了个毕业证但是有技术吗？迷茫，害怕，或许还有些许懦弱。</h3><p>&emsp;</p>
+<blockquote>
+<p>选择</p>
+</blockquote>
+<p>&emsp;</p>
+<h3 id="ensp-ensp-ensp-ensp-1-驾照——不会吧，真的会有男孩子不喜欢车？呵，是呀，我对车真的不感兴趣，丝毫，完全不感兴趣。车牌也不认几个。驾照报了，但没去考过。"><a href="#ensp-ensp-ensp-ensp-1-驾照——不会吧，真的会有男孩子不喜欢车？呵，是呀，我对车真的不感兴趣，丝毫，完全不感兴趣。车牌也不认几个。驾照报了，但没去考过。" class="headerlink" title="&ensp;&ensp;&ensp;&ensp; 1.驾照——不会吧，真的会有男孩子不喜欢车？呵，是呀，我对车真的不感兴趣，丝毫，完全不感兴趣。车牌也不认几个。驾照报了，但没去考过。"></a>&ensp;&ensp;&ensp;&ensp; 1.驾照——不会吧，真的会有男孩子不喜欢车？呵，是呀，我对车真的不感兴趣，丝毫，完全不感兴趣。车牌也不认几个。驾照报了，但没去考过。</h3><h3 id="ensp-ensp-ensp-ensp-2-打工——自己想要找到什么工作？自己会什么，对什么感兴趣？这些都需要思考。"><a href="#ensp-ensp-ensp-ensp-2-打工——自己想要找到什么工作？自己会什么，对什么感兴趣？这些都需要思考。" class="headerlink" title="&ensp;&ensp;&ensp;&ensp; 2.打工——自己想要找到什么工作？自己会什么，对什么感兴趣？这些都需要思考。"></a>&ensp;&ensp;&ensp;&ensp; 2.打工——自己想要找到什么工作？自己会什么，对什么感兴趣？这些都需要思考。</h3><p>&emsp;</p>
+<blockquote>
+<p>最后一件事</p>
+</blockquote>
+<p>&emsp;</p>
+<h1 id="ensp-ensp-ensp-ensp-加油！有想法就去做。不要让自己在虚无中度过。"><a href="#ensp-ensp-ensp-ensp-加油！有想法就去做。不要让自己在虚无中度过。" class="headerlink" title="&ensp;&ensp;&ensp;&ensp; 加油！有想法就去做。不要让自己在虚无中度过。"></a>&ensp;&ensp;&ensp;&ensp; 加油！有想法就去做。不要让自己在虚无中度过。</h1>]]></content>
       <categories>
-          
-          <category> vue </category>
-          
+        <category>日记</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> vue </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>hexo 搭建个人博客</title>
-      <link href="/2021/06/04/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%951/"/>
-      <url>/2021/06/04/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%951/</url>
-      
-        <content type="html"><![CDATA[<blockquote><h4 id="一，下载node-js"><a href="#一，下载node-js" class="headerlink" title="一，下载node.js"></a>一，<strong>下载node.js</strong></h4></blockquote><p>前往<a href="https://nodejs.org/zh-cn/">node.js中文官网</a>下载，安装也很简单一直下一步就可以了。完成就绪，验证一下是否安装成功：按住<strong>win+R</strong>键打开运行框，输入<strong>cmd</strong>进入命令窗口，输入<strong>node -v</strong>回车，显示出版本号则是成功。<br><img "" class="lazyload" data-original="https://img-blog.csdnimg.cn/20210106212333789.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="在这里插入图片描述"></p><blockquote><h4 id="二，安装Git"><a href="#二，安装Git" class="headerlink" title="二，安装Git"></a>二，<strong>安装Git</strong></h4></blockquote><ol><li><p><strong>下载</strong><br>前往<a href="https://git-scm.com/">Git官网下载</a>,由于网络环境因素，可能下载的非常慢，可以复制下载链接到迅雷下载。</p></li><li><p><strong>安装</strong><br>没有特殊需要的话一直Next就行了。<br>安装完成在桌面空白处单击右键，就会发现多了两个选项：<br><img "" class="lazyload" data-original="https://img-blog.csdnimg.cn/20210106213709127.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="在这里插入图片描述"></p><p>点击<strong>Git Bash Here</strong>打开命令窗口，输入<strong>git –version</strong>，回车，如果出现版本号则说明安装成功。<br><img "" class="lazyload" data-original="https://img-blog.csdnimg.cn/20210106214245114.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="在这里插入图片描述"></p><blockquote><h4 id="三，安装Hexo"><a href="#三，安装Hexo" class="headerlink" title="三，安装Hexo"></a>三，<strong>安装Hexo</strong></h4></blockquote><p>前面的准备工作已经完成，下面就开始Hexo的安装。</p></li><li><p><strong>本地安装hexo</strong><br>首先在本地建立一个空文件夹，用来存放hexo文件和以后要写的博客文件，注意不要有中文。我在这里是在D盘建了一个MyBlog文件夹。<br>在新建的文件夹里单击右键，选择<strong>Git Bash Here</strong>，进入命令窗口依次输入以下命令：</p></li></ol><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># 安装 hexo 框架</span><br><span class="line">npm install -g hexo-cli</span><br><span class="line"></span><br><span class="line"># 初始化文件夹</span><br><span class="line">hexo init</span><br><span class="line"></span><br><span class="line"># 安装 hexo 依赖包</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure><p>这三条命令不是一下全输进去而是输一个回车一下。三条命令执行成功，Hexo 框架在本地就已经搭建好了。<br> 2. <strong>查看本地博客效果</strong><br>在<strong>Git Bash Here</strong>命令行窗口依次输入以下代码：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 生成静态网站</span><br><span class="line">hexo g</span><br><span class="line"># 启动服务器</span><br><span class="line">hexo s</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>此时，打开浏览器，输入网址<a href="http://localhost:4000/%EF%BC%8C%E5%B0%B1%E5%8F%AF%E4%BB%A5%E7%9C%8B%E5%88%B0%E6%88%91%E4%BB%AC">http://localhost:4000/，就可以看到我们</a> Hexo 搭建的博客示例了。如下图（这是hexo默认主题）：<br><img "" class="lazyload" data-original="https://img-blog.csdnimg.cn/20210107112839496.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3oxOTA1Nzk2MjM0,size_16,color_FFFFFF,t_70" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="在这里插入图片描述"></p>]]></content>
-      
-      
+      <tags>
+        <tag>生活日记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>找工作</title>
+    <url>/2021/06/15/%E6%89%BE%E5%B7%A5%E4%BD%9C/</url>
+    <content><![CDATA[<h2 id="找工作"><a href="#找工作" class="headerlink" title="找工作"></a>找工作</h2><p>&emsp;</p>
+<p>&ensp;&ensp; 端午节已经过去，不能再在家呆着无所事事。打开boss消息99+，但是有90%的是游戏类的销售“游戏托”。剩余的都是其他的销售。对于我这个嘴笨、迷惑的人。销售无疑是我不可能触及的东西。怕把活的给人家说死了。</p>
+<p>&emsp;</p>
+<p>&ensp;&ensp; boss无果，只能向同学寻求帮助。同学决定让我和他一起进场。假期的工作大概是有着落了。这还是我人生中第一次体验进场，不知道在这次进场的过程中能不能听到我考入本科的消息。或许，我还得要做好打长工的准备。</p>
+<p>&emsp;</p>
+<p>&ensp;&ensp; 如果升本无望，那就先挣他个20000块钱，然后报班学习前端。</p>
+<p>&emsp;</p>
+<p>&ensp;&ensp; 加油！不要让自己迷茫下去，不出去看看，自己想要什么都不知道。</p>
+]]></content>
       <categories>
-          
-          <category> 博客 </category>
-          
+        <category>日记</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 博客 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-  
-  
+      <tags>
+        <tag>生活日记</tag>
+      </tags>
+  </entry>
 </search>
