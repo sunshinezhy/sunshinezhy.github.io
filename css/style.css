@@ -465,7 +465,6 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   width: 100%;
   height: 100%;
   transition: all 0.5s;
-  background-image: url("https://img10.360buyimg.com/ddimg/jfs/t1/159345/8/2271/222193/5ff7b36fEe49f5663/a95287c20385127f.gif");
 }
 .posts .post .post-img a:hover {
   transform: scale(1.2);
@@ -505,7 +504,6 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   width: 100%;
   height: 100%;
   transition: all 0.5s;
-  background-image: url("https://img10.360buyimg.com/ddimg/jfs/t1/159345/8/2271/222193/5ff7b36fEe49f5663/a95287c20385127f.gif");
 }
 .posts .post-img-mobile a:hover {
   transform: scale(1.2);
@@ -1453,7 +1451,6 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   width: 100%;
   height: 100%;
   opacity: 0.6;
-  background-image: url("https://img10.360buyimg.com/ddimg/jfs/t1/159345/8/2271/222193/5ff7b36fEe49f5663/a95287c20385127f.gif");
 }
 .topArticle .articles .article-link .text {
   width: 80%;
@@ -1714,7 +1711,6 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   height: 100%;
   opacity: 0.6;
   transition: all 0.3s;
-  background-image: url("https://img10.360buyimg.com/ddimg/jfs/t1/159345/8/2271/222193/5ff7b36fEe49f5663/a95287c20385127f.gif");
 }
 .post-nav .post-nav-prev .post-nav-link,
 .post-nav .post-nav-next .post-nav-link {
