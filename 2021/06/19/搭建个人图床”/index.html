@@ -10,7 +10,7 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-  <title>找工作 | 无问博客</title>
+  <title>搭建个人图床” | 无问博客</title>
 
   
     
@@ -575,14 +575,14 @@
 
 
 
-<div class="post-detail-header lazyload" id="thumbnail_canvas" data-original="https://img14.360buyimg.com/ddimg/jfs/t1/186547/14/9062/891294/60ccaec1E80b0112f/3404092a735103ee.jpg" style="background-repeat: no-repeat; background-size: cover; 
+<div class="post-detail-header lazyload" id="thumbnail_canvas" data-original="https://gitee.com/z-h-y/figure-bed/raw/master/img/20210619152903.jpg" style="background-repeat: no-repeat; background-size: cover; 
   background-position: center center;position: relative;">
   <div class="post-detail-header-mask"></div>
   <canvas id="header_canvas"style="position:absolute;bottom:0;pointer-events:none;"></canvas>
   
   <div class="title-box">
     <span class="title">
-      找工作
+      搭建个人图床”
     </span>
   </div>
   
@@ -598,7 +598,7 @@
       
       <div class="post-meta">
         <i class="fa fa-clock-o" aria-hidden="true"></i>
-        <span class="post-time">2021-06-15</span>
+        <span class="post-time">2021-06-19</span>
       </div>
       
       <div class="post-tags-categories">
@@ -606,8 +606,8 @@
         <div class="tags">
           <i class="iconfont icontag"></i>
           
-            <a href="/tags/%E7%94%9F%E6%B4%BB%E6%97%A5%E8%AE%B0/" class="">
-              生活日记
+            <a href="/tags/%E5%9B%BE%E5%BA%8A/" class="">
+              图床
             </a>
           
         </div>
@@ -616,22 +616,85 @@
         <div class="categories">
           <i class="iconfont iconbookmark1"></i>
           
-            <a href="/categories/%E6%97%A5%E8%AE%B0/" class="">
-              日记
+            <a href="/categories/%E5%9B%BE%E5%BA%8A/" class="">
+              图床
             </a>
           
         </div>
         
       </div>
       <div class="post-content">
-        <h2 id="找工作"><a href="#找工作" class="headerlink" title="找工作"></a>找工作</h2><p>&emsp;</p>
-<p>&ensp;&ensp; 端午节已经过去，不能再在家呆着无所事事。打开boss消息99+，但是有90%的是游戏类的销售“游戏托”。剩余的都是其他的销售。对于我这个嘴笨、迷惑的人。销售无疑是我不可能触及的东西。怕把活的给人家说死了。</p>
+        <h2 id="gitee-PicGo-搭建个人图床"><a href="#gitee-PicGo-搭建个人图床" class="headerlink" title="gitee + PicGo 搭建个人图床"></a>gitee + PicGo 搭建个人图床</h2><p>&emsp;</p>
+<blockquote>
+<h3 id="一、准备"><a href="#一、准备" class="headerlink" title="一、准备"></a><strong>一、准备</strong></h3></blockquote>
 <p>&emsp;</p>
-<p>&ensp;&ensp; boss无果，只能向同学寻求帮助。同学决定让我和他一起进场。假期的工作大概是有着落了。这还是我人生中第一次体验进场，不知道在这次进场的过程中能不能听到我考入本科的消息。或许，我还得要做好打长工的准备。</p>
+<ul>
+<li><strong>gitee 账号：<a target="_blank" rel="noopener" href="https://gitee.com/">https://gitee.com/</a></strong></li>
+<li><strong>PicGo下载：<a target="_blank" rel="noopener" href="https://github.com/Molunerfinn/PicGo/releases">https://github.com/Molunerfinn/PicGo/releases</a></strong></li>
+<li><strong>Typora下载：<a target="_blank" rel="noopener" href="https://www.typora.io/">https://www.typora.io/</a></strong></li>
+</ul>
 <p>&emsp;</p>
-<p>&ensp;&ensp; 如果升本无望，那就先挣他个20000块钱，然后报班学习前端。</p>
+<blockquote>
+<h3 id="二、gitee创建仓库"><a href="#二、gitee创建仓库" class="headerlink" title="二、gitee创建仓库"></a><strong>二、gitee创建仓库</strong></h3></blockquote>
 <p>&emsp;</p>
-<p>&ensp;&ensp; 加油！不要让自己迷茫下去，不出去看看，自己想要什么都不知道。</p>
+<ul>
+<li><strong>仓库名称： figure-bed  自己起</strong></li>
+<li><strong>注意自己的仓库地址后续有用到</strong></li>
+<li><strong>选择开源，然后创建</strong></li>
+</ul>
+<p><img "" class="lazyload" data-original="https://gitee.com/z-h-y/figure-bed/raw/master/img/20210619202322.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20210619202322880"></p>
+<ul>
+<li><strong>设置私人令牌</strong></li>
+</ul>
+<p>点击右上角个人头像—&gt;设置—&gt;安全设置—&gt;私人令牌—&gt;点击生成新令牌，然后提交即可。</p>
+<p><strong>注意  ： 复制自己的私人令牌，注意保存好。后续平台不会再次显示。</strong></p>
+<p>&emsp;</p>
+<blockquote>
+<h3 id="三、PicGo配置gitee图床"><a href="#三、PicGo配置gitee图床" class="headerlink" title="三、PicGo配置gitee图床"></a><strong>三、PicGo配置gitee图床</strong></h3></blockquote>
+<p>&emsp;</p>
+<ul>
+<li><p><strong>打开PicGo,在插件设置中查找gitee-uploader并安装</strong></p>
+<p><img "" class="lazyload" data-original="https://gitee.com/z-h-y/figure-bed/raw/master/img/20210619203739.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20210619203739109"></p>
+<p>&emsp;</p>
+</li>
+<li><p><strong>安装完毕重新启动，点开图床设置可以看到gitee图床</strong></p>
+</li>
+</ul>
+<p><img "" class="lazyload" data-original="https://gitee.com/z-h-y/figure-bed/raw/master/img/20210619204034.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20210619204034734"></p>
+<ul>
+<li><p><strong>gitee图床配置如下：</strong></p>
+<p><em>repo</em>：所建gitee仓库地址</p>
+<p><em>branch</em>：master即可</p>
+<p><em>token</em>：写入前面所生成的私人令牌</p>
+<p><img "" class="lazyload" data-original="https://gitee.com/z-h-y/figure-bed/raw/master/img/20210619204742.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20210619204742876"></p>
+</li>
+<li><p><strong>PicGo配置</strong></p>
+<p><img "" class="lazyload" data-original="https://gitee.com/z-h-y/figure-bed/raw/master/img/20210619205319.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20210619205319479"></p>
+</li>
+</ul>
+<p>&emsp;</p>
+<blockquote>
+<h3 id="四、图床接入"><a href="#四、图床接入" class="headerlink" title="四、图床接入"></a><strong>四、图床接入</strong></h3></blockquote>
+<p>&emsp;</p>
+<ul>
+<li><p><strong>打开Typora,找到偏好设置：文件-&gt;偏好设置</strong></p>
+</li>
+<li><p><strong>打开<em>图像</em>，进行如下配置</strong></p>
+</li>
+</ul>
+<p><img "" class="lazyload" data-original="https://gitee.com/z-h-y/figure-bed/raw/master/img/20210619210206.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20210619210206133"></p>
+<ul>
+<li><strong>最后点击<em>验证图片上传</em>选项，成功会显示验证成功</strong></li>
+</ul>
+<p><img "" class="lazyload" data-original="https://gitee.com/z-h-y/figure-bed/raw/master/img/20210619210539.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20210619210539883"></p>
+<p>​        <strong>个人图床搭建完成</strong></p>
+<p>&emsp;</p>
+<blockquote>
+<h3 id="五、注意"><a href="#五、注意" class="headerlink" title="五、注意"></a><strong>五、注意</strong></h3></blockquote>
+<ol>
+<li><strong>注意步骤三中的gitee设置是否正确</strong></li>
+<li><strong>注意自己的插件是否下载正确</strong></li>
+</ol>
 
       </div>
       
@@ -642,7 +705,7 @@
     </li>
     <li class="post-copyright-link">
     <strong>文章链接:  </strong>
-    <a href="/2021/06/15/找工作/" target="_blank" title="找工作">http://sunshinezhy.github.io/2021/06/15/找工作/</a>
+    <a href="/2021/06/19/搭建个人图床”/" target="_blank" title="搭建个人图床”">http://sunshinezhy.github.io/2021/06/19/搭建个人图床”/</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明:   </strong>
@@ -660,46 +723,21 @@
 
 
 
-  
-  <div class="post-nav-prev post-nav-item">
-    <div class="post-nav-img lazyload" data-original="https://gitee.com/z-h-y/figure-bed/raw/master/img/20210619152903.jpg" style="background-size: cover; 
-      background-position: center center;">
-    </div>
-    <a href="/2021/06/19/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E2%80%9D/" class="post-nav-link">
-      <div class="title">
-        <i class="fa fa-angle-left"></i> 上一篇:
-        <div>搭建个人图床”</div>
-      </div>
-      
-      <!-- <div class="content">
-        gitee + PicGo 搭建个人图床&emsp;
-
-一、准备
-&emsp;
-
-gitee 账号：https://gi
-      </div> -->
-    </a>
-  </div>
-
 
 
   
   <div class="post-nav-next post-nav-item">
-    <div class="post-nav-img lazyload" data-original="https://gitee.com/z-h-y/figure-bed/raw/master/img/20210619152910.jpg" style="background-size: cover; 
+    <div class="post-nav-img lazyload" data-original="https://img14.360buyimg.com/ddimg/jfs/t1/186547/14/9062/891294/60ccaec1E80b0112f/3404092a735103ee.jpg" style="background-size: cover; 
       background-position: center center;">
     </div>
-    <a href="/2021/06/11/%E5%A4%A7%E4%B8%93%E6%AF%95%E4%B8%9A/" class="post-nav-link">
+    <a href="/2021/06/15/%E6%89%BE%E5%B7%A5%E4%BD%9C/" class="post-nav-link">
       <div class="title">
         下一篇: <i class="fa fa-angle-right"></i>
-        <div>大专毕业</div>
+        <div>找工作</div>
       </div>
       <!-- <div class="content">
-        大专毕业
-专升本考试
-
-&emsp;
-&ensp;&ensp;&ensp;&ensp; 2021年6月10日，专升本考试
+        找工作&emsp;
+&ensp;&ensp; 端午节已经过去，不能再在家呆着无所事事。打开boss消息99+，但是有90
       </div> -->
     </a>
   </div>

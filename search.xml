@@ -1,6 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>hexo 搭建个人博客</title>
+    <url>/2021/06/04/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%951/</url>
+    <content><![CDATA[<blockquote>
+<h4 id="一，下载node-js"><a href="#一，下载node-js" class="headerlink" title="一，下载node.js"></a>一，<strong>下载node.js</strong></h4></blockquote>
+<p>前往<a href="https://nodejs.org/zh-cn/">node.js中文官网</a>下载，安装也很简单一直下一步就可以了。完成就绪，验证一下是否安装成功：按住<strong>win+R</strong>键打开运行框，输入<strong>cmd</strong>进入命令窗口，输入<strong>node -v</strong>回车，显示出版本号则是成功。<br><img "" class="lazyload" data-original="https://img-blog.csdnimg.cn/20210106212333789.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="在这里插入图片描述"></p>
+<blockquote>
+<h4 id="二，安装Git"><a href="#二，安装Git" class="headerlink" title="二，安装Git"></a>二，<strong>安装Git</strong></h4></blockquote>
+<ol>
+<li><p><strong>下载</strong><br>前往<a href="https://git-scm.com/">Git官网下载</a>,由于网络环境因素，可能下载的非常慢，可以复制下载链接到迅雷下载。</p>
+</li>
+<li><p><strong>安装</strong><br>没有特殊需要的话一直Next就行了。<br>安装完成在桌面空白处单击右键，就会发现多了两个选项：<br><img "" class="lazyload" data-original="https://img-blog.csdnimg.cn/20210106213709127.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="在这里插入图片描述"></p>
+<p>点击<strong>Git Bash Here</strong>打开命令窗口，输入<strong>git –version</strong>，回车，如果出现版本号则说明安装成功。<br><img "" class="lazyload" data-original="https://img-blog.csdnimg.cn/20210106214245114.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="在这里插入图片描述"></p>
+<blockquote>
+<h4 id="三，安装Hexo"><a href="#三，安装Hexo" class="headerlink" title="三，安装Hexo"></a>三，<strong>安装Hexo</strong></h4></blockquote>
+<p>前面的准备工作已经完成，下面就开始Hexo的安装。</p>
+</li>
+<li><p><strong>本地安装hexo</strong><br>首先在本地建立一个空文件夹，用来存放hexo文件和以后要写的博客文件，注意不要有中文。我在这里是在D盘建了一个MyBlog文件夹。<br>在新建的文件夹里单击右键，选择<strong>Git Bash Here</strong>，进入命令窗口依次输入以下命令：</p>
+</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 安装 hexo 框架</span><br><span class="line">npm install -g hexo-cli</span><br><span class="line"></span><br><span class="line"># 初始化文件夹</span><br><span class="line">hexo init</span><br><span class="line"></span><br><span class="line"># 安装 hexo 依赖包</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
+<p>这三条命令不是一下全输进去而是输一个回车一下。三条命令执行成功，Hexo 框架在本地就已经搭建好了。<br> 2. <strong>查看本地博客效果</strong><br>在<strong>Git Bash Here</strong>命令行窗口依次输入以下代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 生成静态网站</span><br><span class="line">hexo g</span><br><span class="line"># 启动服务器</span><br><span class="line">hexo s</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>此时，打开浏览器，输入网址<a href="http://localhost:4000/%EF%BC%8C%E5%B0%B1%E5%8F%AF%E4%BB%A5%E7%9C%8B%E5%88%B0%E6%88%91%E4%BB%AC">http://localhost:4000/，就可以看到我们</a> Hexo 搭建的博客示例了。如下图（这是hexo默认主题）：<br><img "" class="lazyload" data-original="https://img-blog.csdnimg.cn/20210107112839496.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3oxOTA1Nzk2MjM0,size_16,color_FFFFFF,t_70" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="在这里插入图片描述"></p>
+]]></content>
+      <categories>
+        <category>博客</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>在vue-cli中使用vuex</title>
     <url>/2021/06/05/%E5%9C%A8vue-cli%E4%B8%AD%E4%BD%BF%E7%94%A8vuex/</url>
     <content><![CDATA[<h2 id="vue-cli中使用Vuex"><a href="#vue-cli中使用Vuex" class="headerlink" title="vue-cli中使用Vuex"></a>vue-cli中使用Vuex</h2><blockquote>
@@ -50,57 +82,6 @@ import Vuex from &#39;vuex&#39;
       </tags>
   </entry>
   <entry>
-    <title>hexo 搭建个人博客</title>
-    <url>/2021/06/04/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%951/</url>
-    <content><![CDATA[<blockquote>
-<h4 id="一，下载node-js"><a href="#一，下载node-js" class="headerlink" title="一，下载node.js"></a>一，<strong>下载node.js</strong></h4></blockquote>
-<p>前往<a href="https://nodejs.org/zh-cn/">node.js中文官网</a>下载，安装也很简单一直下一步就可以了。完成就绪，验证一下是否安装成功：按住<strong>win+R</strong>键打开运行框，输入<strong>cmd</strong>进入命令窗口，输入<strong>node -v</strong>回车，显示出版本号则是成功。<br><img "" class="lazyload" data-original="https://img-blog.csdnimg.cn/20210106212333789.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="在这里插入图片描述"></p>
-<blockquote>
-<h4 id="二，安装Git"><a href="#二，安装Git" class="headerlink" title="二，安装Git"></a>二，<strong>安装Git</strong></h4></blockquote>
-<ol>
-<li><p><strong>下载</strong><br>前往<a href="https://git-scm.com/">Git官网下载</a>,由于网络环境因素，可能下载的非常慢，可以复制下载链接到迅雷下载。</p>
-</li>
-<li><p><strong>安装</strong><br>没有特殊需要的话一直Next就行了。<br>安装完成在桌面空白处单击右键，就会发现多了两个选项：<br><img "" class="lazyload" data-original="https://img-blog.csdnimg.cn/20210106213709127.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="在这里插入图片描述"></p>
-<p>点击<strong>Git Bash Here</strong>打开命令窗口，输入<strong>git –version</strong>，回车，如果出现版本号则说明安装成功。<br><img "" class="lazyload" data-original="https://img-blog.csdnimg.cn/20210106214245114.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="在这里插入图片描述"></p>
-<blockquote>
-<h4 id="三，安装Hexo"><a href="#三，安装Hexo" class="headerlink" title="三，安装Hexo"></a>三，<strong>安装Hexo</strong></h4></blockquote>
-<p>前面的准备工作已经完成，下面就开始Hexo的安装。</p>
-</li>
-<li><p><strong>本地安装hexo</strong><br>首先在本地建立一个空文件夹，用来存放hexo文件和以后要写的博客文件，注意不要有中文。我在这里是在D盘建了一个MyBlog文件夹。<br>在新建的文件夹里单击右键，选择<strong>Git Bash Here</strong>，进入命令窗口依次输入以下命令：</p>
-</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 安装 hexo 框架</span><br><span class="line">npm install -g hexo-cli</span><br><span class="line"></span><br><span class="line"># 初始化文件夹</span><br><span class="line">hexo init</span><br><span class="line"></span><br><span class="line"># 安装 hexo 依赖包</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
-<p>这三条命令不是一下全输进去而是输一个回车一下。三条命令执行成功，Hexo 框架在本地就已经搭建好了。<br> 2. <strong>查看本地博客效果</strong><br>在<strong>Git Bash Here</strong>命令行窗口依次输入以下代码：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 生成静态网站</span><br><span class="line">hexo g</span><br><span class="line"># 启动服务器</span><br><span class="line">hexo s</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>此时，打开浏览器，输入网址<a href="http://localhost:4000/%EF%BC%8C%E5%B0%B1%E5%8F%AF%E4%BB%A5%E7%9C%8B%E5%88%B0%E6%88%91%E4%BB%AC">http://localhost:4000/，就可以看到我们</a> Hexo 搭建的博客示例了。如下图（这是hexo默认主题）：<br><img "" class="lazyload" data-original="https://img-blog.csdnimg.cn/20210107112839496.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3oxOTA1Nzk2MjM0,size_16,color_FFFFFF,t_70" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="在这里插入图片描述"></p>
-]]></content>
-      <categories>
-        <category>博客</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>找工作</title>
-    <url>/2021/06/15/%E6%89%BE%E5%B7%A5%E4%BD%9C/</url>
-    <content><![CDATA[<h2 id="找工作"><a href="#找工作" class="headerlink" title="找工作"></a>找工作</h2><p>&emsp;</p>
-<p>&ensp;&ensp; 端午节已经过去，不能再在家呆着无所事事。打开boss消息99+，但是有90%的是游戏类的销售“游戏托”。剩余的都是其他的销售。对于我这个嘴笨、迷惑的人。销售无疑是我不可能触及的东西。怕把活的给人家说死了。</p>
-<p>&emsp;</p>
-<p>&ensp;&ensp; boss无果，只能向同学寻求帮助。同学决定让我和他一起进场。假期的工作大概是有着落了。这还是我人生中第一次体验进场，不知道在这次进场的过程中能不能听到我考入本科的消息。或许，我还得要做好打长工的准备。</p>
-<p>&emsp;</p>
-<p>&ensp;&ensp; 如果升本无望，那就先挣他个20000块钱，然后报班学习前端。</p>
-<p>&emsp;</p>
-<p>&ensp;&ensp; 加油！不要让自己迷茫下去，不出去看看，自己想要什么都不知道。</p>
-]]></content>
-      <categories>
-        <category>日记</category>
-      </categories>
-      <tags>
-        <tag>生活日记</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>大专毕业</title>
     <url>/2021/06/11/%E5%A4%A7%E4%B8%93%E6%AF%95%E4%B8%9A/</url>
     <content><![CDATA[<h2 id="大专毕业"><a href="#大专毕业" class="headerlink" title="大专毕业"></a>大专毕业</h2><blockquote>
@@ -128,6 +109,107 @@ import Vuex from &#39;vuex&#39;
       </categories>
       <tags>
         <tag>生活日记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>找工作</title>
+    <url>/2021/06/15/%E6%89%BE%E5%B7%A5%E4%BD%9C/</url>
+    <content><![CDATA[<h2 id="找工作"><a href="#找工作" class="headerlink" title="找工作"></a>找工作</h2><p>&emsp;</p>
+<p>&ensp;&ensp; 端午节已经过去，不能再在家呆着无所事事。打开boss消息99+，但是有90%的是游戏类的销售“游戏托”。剩余的都是其他的销售。对于我这个嘴笨、迷惑的人。销售无疑是我不可能触及的东西。怕把活的给人家说死了。</p>
+<p>&emsp;</p>
+<p>&ensp;&ensp; boss无果，只能向同学寻求帮助。同学决定让我和他一起进场。假期的工作大概是有着落了。这还是我人生中第一次体验进场，不知道在这次进场的过程中能不能听到我考入本科的消息。或许，我还得要做好打长工的准备。</p>
+<p>&emsp;</p>
+<p>&ensp;&ensp; 如果升本无望，那就先挣他个20000块钱，然后报班学习前端。</p>
+<p>&emsp;</p>
+<p>&ensp;&ensp; 加油！不要让自己迷茫下去，不出去看看，自己想要什么都不知道。</p>
+]]></content>
+      <categories>
+        <category>日记</category>
+      </categories>
+      <tags>
+        <tag>生活日记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>搭建个人图床”</title>
+    <url>/2021/06/19/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E2%80%9D/</url>
+    <content><![CDATA[<h2 id="gitee-PicGo-搭建个人图床"><a href="#gitee-PicGo-搭建个人图床" class="headerlink" title="gitee + PicGo 搭建个人图床"></a>gitee + PicGo 搭建个人图床</h2><p>&emsp;</p>
+<blockquote>
+<h3 id="一、准备"><a href="#一、准备" class="headerlink" title="一、准备"></a><strong>一、准备</strong></h3></blockquote>
+<p>&emsp;</p>
+<ul>
+<li><strong>gitee 账号：<a href="https://gitee.com/">https://gitee.com/</a></strong></li>
+<li><strong>PicGo下载：<a href="https://github.com/Molunerfinn/PicGo/releases">https://github.com/Molunerfinn/PicGo/releases</a></strong></li>
+<li><strong>Typora下载：<a href="https://www.typora.io/">https://www.typora.io/</a></strong></li>
+</ul>
+<p>&emsp;</p>
+<blockquote>
+<h3 id="二、gitee创建仓库"><a href="#二、gitee创建仓库" class="headerlink" title="二、gitee创建仓库"></a><strong>二、gitee创建仓库</strong></h3></blockquote>
+<p>&emsp;</p>
+<ul>
+<li><strong>仓库名称： figure-bed  自己起</strong></li>
+<li><strong>注意自己的仓库地址后续有用到</strong></li>
+<li><strong>选择开源，然后创建</strong></li>
+</ul>
+<p><img "" class="lazyload" data-original="https://gitee.com/z-h-y/figure-bed/raw/master/img/20210619202322.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20210619202322880"></p>
+<ul>
+<li><strong>设置私人令牌</strong></li>
+</ul>
+<p>点击右上角个人头像—&gt;设置—&gt;安全设置—&gt;私人令牌—&gt;点击生成新令牌，然后提交即可。</p>
+<p><strong>注意  ： 复制自己的私人令牌，注意保存好。后续平台不会再次显示。</strong></p>
+<p>&emsp;</p>
+<blockquote>
+<h3 id="三、PicGo配置gitee图床"><a href="#三、PicGo配置gitee图床" class="headerlink" title="三、PicGo配置gitee图床"></a><strong>三、PicGo配置gitee图床</strong></h3></blockquote>
+<p>&emsp;</p>
+<ul>
+<li><p><strong>打开PicGo,在插件设置中查找gitee-uploader并安装</strong></p>
+<p><img "" class="lazyload" data-original="https://gitee.com/z-h-y/figure-bed/raw/master/img/20210619203739.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20210619203739109"></p>
+<p>&emsp;</p>
+</li>
+<li><p><strong>安装完毕重新启动，点开图床设置可以看到gitee图床</strong></p>
+</li>
+</ul>
+<p><img "" class="lazyload" data-original="https://gitee.com/z-h-y/figure-bed/raw/master/img/20210619204034.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20210619204034734"></p>
+<ul>
+<li><p><strong>gitee图床配置如下：</strong></p>
+<p><em>repo</em>：所建gitee仓库地址</p>
+<p><em>branch</em>：master即可</p>
+<p><em>token</em>：写入前面所生成的私人令牌</p>
+<p><img "" class="lazyload" data-original="https://gitee.com/z-h-y/figure-bed/raw/master/img/20210619204742.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20210619204742876"></p>
+</li>
+<li><p><strong>PicGo配置</strong></p>
+<p><img "" class="lazyload" data-original="https://gitee.com/z-h-y/figure-bed/raw/master/img/20210619205319.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20210619205319479"></p>
+</li>
+</ul>
+<p>&emsp;</p>
+<blockquote>
+<h3 id="四、图床接入"><a href="#四、图床接入" class="headerlink" title="四、图床接入"></a><strong>四、图床接入</strong></h3></blockquote>
+<p>&emsp;</p>
+<ul>
+<li><p><strong>打开Typora,找到偏好设置：文件-&gt;偏好设置</strong></p>
+</li>
+<li><p><strong>打开<em>图像</em>，进行如下配置</strong></p>
+</li>
+</ul>
+<p><img "" class="lazyload" data-original="https://gitee.com/z-h-y/figure-bed/raw/master/img/20210619210206.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20210619210206133"></p>
+<ul>
+<li><strong>最后点击<em>验证图片上传</em>选项，成功会显示验证成功</strong></li>
+</ul>
+<p><img "" class="lazyload" data-original="https://gitee.com/z-h-y/figure-bed/raw/master/img/20210619210539.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20210619210539883"></p>
+<p>​        <strong>个人图床搭建完成</strong></p>
+<p>&emsp;</p>
+<blockquote>
+<h3 id="五、注意"><a href="#五、注意" class="headerlink" title="五、注意"></a><strong>五、注意</strong></h3></blockquote>
+<ol>
+<li><strong>注意步骤三中的gitee设置是否正确</strong></li>
+<li><strong>注意自己的插件是否下载正确</strong></li>
+</ol>
+]]></content>
+      <categories>
+        <category>图床</category>
+      </categories>
+      <tags>
+        <tag>图床</tag>
       </tags>
   </entry>
 </search>
